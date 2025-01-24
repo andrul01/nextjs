@@ -1,33 +1,71 @@
+import Head from 'next/head';
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="m-5 space-y-4">
-      <div className="lg:flex lg:flex-row mt-4 space-y-3">
-          <Image 
-            className="border rounded-lg"
-            src="/spidy2.jpg"
-            width={500}
-            height={500}
-          />
-        <div className="mt-4 md:mx-4">
-          <h1 className="font-bold py-3 ">Gaming Blogs</h1>
-          <p>Welcome to our Gaming Blog, your ultimate destination for the latest gaming news, reviews, and in-depth discussions. Whether you're a casual gamer or a hardcore enthusiast, we cover everything from trending titles, game releases, industry updates, tips & tricks, and insightful analysis of the gaming world. Stay ahead with our expert reviews, gaming guides, and exclusive content tailored for every type of gamer. Join us as we explore the ever-evolving universe of gaming 🎮🔥</p>
+    <div className="">
+      <Head>
+        <title>My Blog</title>
+        <meta name="description" content="A simple blog homepage using Next.js and Tailwind CSS" />
+      </Head>
+      
+     {/* Hero Section */}
+      <header className="bg-white border">
+        <div className="mt-4 flex flex-col md:flex-row justify-center items-center md:space-x-3 p-4">
+          
+          {/* Text Section */}
+          <div className="flex text-center md:text-left items-center">
+            <div className='p-4'>
+              <h2 className="text-2xl md:text-4xl font-extrabold">Welcome to Andrul</h2>
+              <h2 className="text-2xl md:text-4xl font-extrabold">
+                <span className='text-blue-500 mr-2'>Tech</span>
+                And
+                <span className='text-blue-500 mx-2'>Gaming</span>
+                Blog
+              </h2>
+              <p className="text-base md:text-lg text-gray-700 mt-4">
+                Discover insightful articles and updates.
+              </p>
+            </div>
+          </div>
+
+          {/* Image Section */}
+          <div className="m-4">
+            <Image 
+              src="/games.png" 
+              width={500} 
+              height={300} 
+              alt="Hero Image"
+              className="max-w-full h-auto"
+            />
+          </div>
+
         </div>
-      </div>
-      <div className="lg:flex lg:flex-row mt-4 space-y-3">
-        <Image 
-          className="border rounded-lg"
-          src="/next.jpg"
-          width={500}
-          height={500}
-        />
-        <div className="mt-4 md:mx-4">
-          <h1 className="font-bold py-3">Code Blogs</h1>
-          <p>Welcome to our Code Blog, your go-to resource for mastering Next.js and modern web development. Whether you're a beginner or an experienced developer, we provide in-depth tutorials, best practices, performance optimization tips, and real-world projects to help you build scalable, high-performance web applications. Stay updated with the latest features, server-side rendering, static site generation, API routes, and everything you need to take your coding skills to the next level. 🚀💻</p>
+      </header>
+
+      
+      {/* Blog Section */}
+      <main className="container mx-auto py-10 px-4">
+        <h3 className="text-2xl font-semibold mb-6">Latest Posts</h3>
+        <div className="grid md:grid-cols-3 gap-6">
+          <div className="bg-white p-4 rounded shadow">
+            <h4 className="text-xl font-bold">Post Title 1</h4>
+            <p className="text-gray-600 mt-2">A short description of the blog post.</p>
+            <a href="#" className="text-blue-600 mt-2 inline-block">Read More</a>
+          </div>
+          <div className="bg-white p-4 rounded shadow">
+            <h4 className="text-xl font-bold">Post Title 2</h4>
+            <p className="text-gray-600 mt-2">A short description of the blog post.</p>
+            <a href="#" className="text-blue-600 mt-2 inline-block">Read More</a>
+          </div>
+          <div className="bg-white p-4 rounded shadow">
+            <h4 className="text-xl font-bold">Post Title 3</h4>
+            <p className="text-gray-600 mt-2">A short description of the blog post.</p>
+            <a href="#" className="text-blue-600 mt-2 inline-block">Read More</a>
+          </div>
         </div>
-      </div>
+      </main>
       
     </div>
   );
