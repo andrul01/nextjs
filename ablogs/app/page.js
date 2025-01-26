@@ -46,7 +46,7 @@ export default function Home() {
 
       
       {/* Blog Section */}
-      <main className="container mx-auto py-10 px-4">
+      <main className=" mx-auto py-10 px-4">
         <h3 className="text-2xl font-semibold mb-6">Latest Posts</h3>
         <div className="grid md:grid-cols-3 gap-6">
           <div className="bg-white p-4 rounded shadow">
