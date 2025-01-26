@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="">
       <Head>
-        <title>My Blog</title>
+        <title>Andrul Blog</title>
         <meta name="description" content="A simple blog homepage using Next.js and Tailwind CSS" />
       </Head>
       
