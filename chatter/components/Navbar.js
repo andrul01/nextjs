@@ -12,8 +12,7 @@ const Navbar = () => {
         <Link href="/" className="text-xl font-bold">Chatter</Link>
         
         {/* Navigation Menu */}
-        <div className="flex space-x-6">
-          <Link href="/" className="hover:text-gray-400">Home</Link>
+        <div className="flex space-x-6 hidden md:flex md:block">
           <Link href="/forum" className="hover:text-gray-400">Forum</Link>
           <Link href="/chat" className="hover:text-gray-400">Chats</Link>
           <Link href="/contact" className="hover:text-gray-400">Contacts</Link>

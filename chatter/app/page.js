@@ -16,7 +16,7 @@ export default function Home() {
       
       {/* Pricing Section */}
       <section className="container mx-auto px-6 py-12">
-        <h2 className="text-3xl font-bold text-center mb-8">Choose Your Plan</h2>
+        <h2 className="text-3xl text-black font-bold text-center mb-8">Choose Your Plan</h2>
         <div className="grid md:grid-cols-3 gap-6">
           {/* Basic Plan */}
           <div className="bg-white p-6 rounded-lg shadow-lg text-center">

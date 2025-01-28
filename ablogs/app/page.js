@@ -17,7 +17,7 @@ export default function Home() {
           {/* Text Section */}
           <div className="flex text-center md:text-left items-center">
             <div className='p-4'>
-              <h2 className="text-2xl md:text-4xl font-extrabold">Welcome to Andrul</h2>
+              <h2 className="text-3xl md:text-5xl font-extrabold">Welcome to Andrul</h2>
               <h2 className="text-2xl md:text-4xl font-extrabold">
                 <span className='text-blue-500 mr-2'>Tech</span>
                 And
