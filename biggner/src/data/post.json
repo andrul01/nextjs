@@ -1,0 +1,32 @@
+{
+    "posts":[
+        {
+            "id":1,
+            "title":"Spiderman",
+            "content":"The story explores Peter Parker's transformation into Spider-Man, set in an alternate timeline. In this version, Norman Osborn, the father of Peter's school friend Harry, takes on the role of his mentor....",
+            "author":"Andrul",
+            "image":"https://via.placeholder.com/150",
+            "slug":"latest-post",
+            "isFeatured":true
+        },
+        {
+            "id":2,
+            "title":"Spiderman",
+            "content":"The story explores Peter Parker's transformation into Spider-Man, set in an alternate timeline. In this version, Norman Osborn, the father of Peter's school friend Harry, takes on the role of his mentor....",
+            "author":"Andrul",
+            "image":"https://via.placeholder.com/150",
+            "slug":"latest-post",
+            "isFeatured":true
+        },
+        {
+            "id":3,
+            "title":"Spiderman",
+            "content":"The story explores Peter Parker's transformation into Spider-Man, set in an alternate timeline. In this version, Norman Osborn, the father of Peter's school friend Harry, takes on the role of his mentor....",
+            "author":"Andrul",
+            "image":"https://via.placeholder.com/150",
+            "slug":"latest-post",
+            "isFeatured":true
+        }
+    ]
+
+}

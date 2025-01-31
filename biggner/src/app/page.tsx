@@ -1,11 +1,12 @@
 import HeroSection from "@/components/HeroSection";
+import LatestBlogs from "@/components/LatestBlogs";
 import Image from "next/image";
 
 export default function Home() {
   return (  
     <main className="min-h-screen bg-black/[0.96] antialiased bg-grid-white/[0.35]">
-        <h1 className="text-2xl text-center">Home</h1>
         <HeroSection/>
+        <LatestBlogs/>
     </main>
   );
 }
