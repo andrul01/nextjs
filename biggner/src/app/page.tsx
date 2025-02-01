@@ -1,5 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import LatestBlogs from "@/components/LatestBlogs";
+import WhyJoinUs from "@/components/WhyJoinUs";
 import Image from "next/image";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <main className="min-h-screen bg-black/[0.96] antialiased bg-grid-white/[0.35]">
         <HeroSection/>
         <LatestBlogs/>
+        <WhyJoinUs/>
     </main>
   );
 }
