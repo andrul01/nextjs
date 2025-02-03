@@ -1,6 +1,9 @@
 import HeroSection from "@/components/HeroSection";
 import LatestBlogs from "@/components/LatestBlogs";
+import TestimonialCards from "@/components/TestimonialCards";
 import WhyJoinUs from "@/components/WhyJoinUs";
+import HoveredCard from "@/components/HoveredCard";
+import Instructors from "@/components/Instructors";
 import Image from "next/image";
 
 export default function Home() {
@@ -9,6 +12,9 @@ export default function Home() {
         <HeroSection/>
         <LatestBlogs/>
         <WhyJoinUs/>
+        <TestimonialCards/>
+        <HoveredCard/>
+        <Instructors/>
     </main>
   );
 }

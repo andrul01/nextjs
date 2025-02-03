@@ -61,7 +61,7 @@ function LatestBlogs() {
 
       </div>
       <div className="text-center mt-5">
-        <Link href={'/'}>
+        <Link href={'/'}>           
           <Button 
             borderRadius='2rem'
             className='bg-black text-white'
