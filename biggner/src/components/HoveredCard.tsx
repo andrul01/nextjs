@@ -38,7 +38,7 @@ const projects =[
 
 function HoveredCard() {
   return (
-    <div className="p-20 flex flex-col items-center">
+    <div className="p-10 flex flex-col items-center bg-gray-600">
       <div className="mx-auto text-3xl">
         <h2>Hovered Section</h2>
       </div>

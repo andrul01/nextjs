@@ -5,6 +5,7 @@ import WhyJoinUs from "@/components/WhyJoinUs";
 import HoveredCard from "@/components/HoveredCard";
 import Instructors from "@/components/Instructors";
 import Image from "next/image";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (  
@@ -15,6 +16,7 @@ export default function Home() {
         <TestimonialCards/>
         <HoveredCard/>
         <Instructors/>
+        <Footer/>
     </main>
   );
 }

@@ -33,7 +33,7 @@ console.log(instructors);
 
 function Instructors() {
   return (
-    <div className='relative h-[40rem] justify-center items-center flex' >
+    <div className='relative h-[40rem] justify-center items-center flex overflow-hidden' >
         <WavyBackground>
             <h2 className='text-2xl sm:text-3xl md:text-4xl lg:text-7xl'>Meet Our Instructors</h2>
             <div className='flex flex-row justify-center items-center p-10 mt-10'>

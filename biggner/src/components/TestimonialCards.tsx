@@ -24,7 +24,7 @@ const TestimonialCardsData = [
 
 function TestimonialCards() {
   return (
-    <div className="h-[40rem] w-full dark:bg-black dark:bg-grid-white  flex flex-col items-center justify-center space-y-4 overflow-hidden">
+    <div className="h-[40rem] relative mt-40 w-full dark:bg-black dark:bg-grid-white flex flex-col items-center justify-center space-y-4 overflow-hidden ">
       <h1 className="text-center">Revolutionizing the Future: Gaming, AI, and More</h1>
       <div className="flex justify-center w-full overflow-hidden">
       <InfiniteMovingCards

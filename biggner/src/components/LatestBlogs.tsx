@@ -20,7 +20,7 @@ function LatestBlogs() {
   const featuredPosts = postData.posts.filter((posts:Posts) => posts.isFeatured)
 
   return (
-    <div className="mt-3 py-5 bg-gray-200 ">
+    <div className="mt-3 py-5 bg-gray-200 h-auto">
       <div>
         <div className="text-center text-black">
           <h2 className="text-4xl font-bold font-serif">LATEST BLOG POST</h2>
