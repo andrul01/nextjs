@@ -1,3 +1,4 @@
+"use client";
 import HeroSection from "@/components/HeroSection";
 import LatestBlogs from "@/components/LatestBlogs";
 import TestimonialCards from "@/components/TestimonialCards";

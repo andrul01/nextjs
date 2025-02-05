@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image"; 
 import Link from "next/link";
 
@@ -62,7 +63,7 @@ export default function Home() {
 }
 
  
-export const metadata = {
-  title: 'Home - chatter',
-  description: 'chatter is a Next.js app with Clerk authentication.',
-}
+// export const metadata = {
+//   title: 'Home - chatter',
+//   description: 'chatter is a Next.js app with Clerk authentication.',
+// }
