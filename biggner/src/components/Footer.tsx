@@ -28,7 +28,7 @@ function Footer() {
           <div>
             <h3 className='text-lg font-semibold mb-4'>Contact</h3>
             <p className='text-gray-400 text-sm'>
-              Email: support@atextechforum.com<br />
+              Email: atextechforum@support<br />
               Phone: +91 7796064374
             </p>
           </div>
