@@ -10,39 +10,109 @@ app.listen(port, () => {
 
 
 //root route
+
+// return html
+// app.get('/', (req, res) => {
+//     res.send("<h1>Hello Andrul Gaming</h1>")
+// })
+
+app.set('view engine', 'ejs');
+
+// middleware
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
+
+//return object
 app.get('/', (req, res) => {
-    //in console
-    // res.send("Hello Andrul")
-    //in browser
-    res.send("<h1>Hello Andrul Gaming</h1>")
+    res.json(
+        {
+            name: "Andrul",
+            age: 20,
+        }
+    )
 })
 
-//about route
-app.get('/about', (req, res) => {
-    res.send("<h1>About Page</h1>")
+app.post('/about', (req, res) => {
+    res.send(req.body)
 })
-
-//gallary route
-app.get('/gallary', (req, res) => {
-    res.send("<h1>Gallary Page</h1>")
-})
-
-//services route
-app.get('/services', (req, res) => {
-    res.send("<h1>Services Page</h1>")
+app.get('/host', (req, res) => {
+    // res.send(req.hostname)
+    // res.send(req.ip)
+    // res.send(req.ips)
+    // res.send(req.method)
+    // res.send(req.originalUrl)
+    // res.send(req.path)
+    // res.send(req.protocol)
+    // res.send(req.secure)
+    res.send(req.route)
 })
 
 //Users route
-app.get('/users/:id', (req, res) => {
-    res.send(req.params)
+app.get('/users', (req, res) => {
+    if(req.accepts('html')){
+        res.send('<h1>Hello Andrul</h1>')
+    }else if(req.accepts('json')){
+        res.json({name: "Andrul"})
+    }else if(req.accepts('xml')){
+        res.send('<name>Andrul</name>')
+    }
+    else{
+        res.send('Unsupported format')
+    }
 })
 
-app.get('/users/:userid/level/:levelid', (req, res) => {
-    res.send(req.params)
+
+app.get('/header', (req, res) => {
+    // res.send(req.headers);
+    res.send(req.get("Host"));
 })
-app.get('/users/:userid/level/:levelid', (req, res) => {
-    res.send(req.params.userid)
-})
+
+
+
+
+// app.get('/users', (req, res) => {
+//     res.render('users');
+// })
+
+// app.get('/download', (req, res) => {
+//     res.download('./files/Resume_143kb.pdf', 'Andrul_Resume.pdf');
+// })
+
+// app.get('/showfile', (req, res) => {
+//     res.sendFile(__dirname + '/files/Resume_143kb.pdf');
+// })
+
+// app.get('/error', (req, res) => {
+//     res.sendStatus(404);
+// })
+
+// json data
+// app.get('/', (req, res) => {
+//     res.json(
+//         {
+//             name: "Andrul",
+//             age: 20,
+//         }
+//     )
+// })
+
+
+// about route
+// app.get('/about', (req, res) => {
+//     res.send("<h1>About Page</h1>")
+// })
+
+//Users route
+// app.get('/users/:id', (req, res) => {
+//     res.send(req.params)
+// })
+
+// app.get('/users/:userid/level/:levelid', (req, res) => {
+//     res.send(req.params)
+// })
+// app.get('/users/:userid/level/:levelid', (req, res) => {
+//     res.send(req.params.userid)
+// })
 
 //using query parameters
 //http://localhost:3000/search?name=andrul&age=20
@@ -53,8 +123,8 @@ app.get('/users/:userid/level/:levelid', (req, res) => {
 // })
 
 //in browser
-app.get('/search', (req, res) => {
-    const name = req.query.name
-    const age = req.query.age
-    res.send(`Name: ${name}, Age: ${age}`)
-})
+// app.get('/search', (req, res) => {
+//     const name = req.query.name
+//     const age = req.query.age
+//     res.send(`Name: ${name}, Age: ${age}`)
+// })
