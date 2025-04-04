@@ -11,7 +11,7 @@ function Navbar() {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="text-xl font-bold">
-          Logo
+          Andrul
         </Link>
 
         {/* Desktop Navbar Items */}
