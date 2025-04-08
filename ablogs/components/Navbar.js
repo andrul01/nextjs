@@ -1,7 +1,6 @@
-"use client";
 import React from 'react';
 import Link from 'next/link';
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
     Sheet,
     SheetContent,
@@ -9,7 +8,7 @@ import {
     SheetHeader,
     SheetTitle,
     SheetTrigger,
-  } from "@/components/ui/sheet"
+  } from "@/components/ui/sheet";
 import { ModeToggle } from './theme-button';
   
 
@@ -26,8 +25,7 @@ const Navbar = () => {
             <Button variant="outline" className="hover:text-blue-500">Signup</Button>
             <ModeToggle/>
         </div>
-        <div class>
-
+        <div className=''>
             <Sheet>
                 <span className='md:hidden mx-3'>
                 <ModeToggle/>
@@ -39,7 +37,6 @@ const Navbar = () => {
                         </svg>
                     {/* </button> */}
                 </SheetTrigger>
-            
                 <SheetContent>
                     <SheetHeader>
                         <SheetTitle>Andrul Blogs</SheetTitle>
